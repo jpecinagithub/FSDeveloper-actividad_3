@@ -1,0 +1,188 @@
+/* Este s el estilo de las partes generales. En este caso alicamos unos márgenes
+ en el body y damos un estilo de letra para todo el documento*/
+body {
+  font-family: Fenix;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@font-face {
+  font-family: Fenix;
+
+  src: url(fonts/Fenix/Fenix-Regular.ttf);
+}
+
+/* Este s el estilo para la parte del header que también lo denominamos row-1*/
+.row-1_container {
+  display: flex;
+  height: 40px;
+  padding-top: 20px;
+
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+.row-1_logo {
+  font-size: large;
+}
+
+.row-1_principal-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+/* Estos son los estilos de la fila 2 que también la denominaos row-2*/
+
+.row-2_container {
+  display: flex;
+  margin-top: 20px;
+}
+.row-2_text {
+  padding-left: 15px;
+}
+.row-2_image {
+  justify-content: left;
+}
+.row-2_image_absolute {
+  background-color: #45a049;
+  padding: 5px;
+  position: absolute;
+  left: 80px;
+  top: 100px;
+}
+.row-2_price-button {
+  background-color: dodgerblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+.row-2_caja2hija {
+  padding: 20px;
+  display: flex;
+}
+.row-2_price {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+.row-2_price-item {
+  font-size: x-large;
+}
+
+.row-2_opcion_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.row-2_opcion_item {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estos son los estilos de la fila 3 que también la denominamos row-3*/
+.row-3 {
+  display: flex;
+}
+.row-3_container {
+  display: block;
+
+  margin: 10px;
+}
+.row-3_accesorio-item {
+  margin: 10px;
+  border-style: groove;
+
+  width: 220px;
+}
+.row-3_botonoferta {
+  background-color: red;
+  margin-left: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.row-3_botonnuevo {
+  background-color: dodgerblue;
+  margin-left: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.row-3_image {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.row-3_h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row-3_p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row-3_h2 {
+  margin-left: 20px;
+  display: block;
+}
+.row-3_accesorios-list {
+  display: flex;
+}
+
+/* Estos son los estilos de la fila 4 que también la denominamos row-4*/
+
+.row-4_container {
+  display: flex;
+  margin: 10px;
+  background-color: lightblue;
+}
+.row-4_text {
+  padding: 20px;
+}
+
+.row-4_form {
+  padding: 20px;
+  display: block;
+}
+
+.row-4_form_item {
+  margin: 8px;
+}
+
+.row-4_form_input {
+  margin: 15px;
+  display: block;
+}
+
+.row-4_form_button {
+  background-color: dodgerblue;
+  height: 30px;
+  border-radius: 5px;
+}
+.row-4_form_button:hover {
+  background-color: #45a049;
+}
+
+/* Este s el estilo del footer*/
+.container_footer {
+  text-align: center;
+  border-top: 1px solid;
+}
+
+/* Este s el estilo elementos con un ancho inferior a 768px*/
+@media (max-width: 768px) {
+  .row-1_principal-nav {
+    display: none;
+  }
+  .row-2_container {
+    display: block;
+  }
+  .row-3_accesorios-list {
+    display: block;
+  }
+  .row-4_container {
+    display: block;
+  }
+}
